@@ -6,6 +6,9 @@ const App = () => {
   return (
     <div>
       <button onClick={() => history.push("/hooks-tutorial")}>8장 Hooks</button>
+      <button onClick={() => history.push("/styling-react")}>
+        9장 컴포넌트 스타일링
+      </button>
     </div>
   );
 };
