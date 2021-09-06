@@ -3,6 +3,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Main from "./Main.js";
 import HooksTutorial from "./hooks-tutorial/HooksTutorial.js";
 import StylingReact from "./styling-react/StylingReact.js";
+import TodoApp from "./todo-app/TodoApp.js";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Route exact path="/" component={Main} />
         <Route exact path="/hooks-tutorial" component={HooksTutorial} />
         <Route exact path="/styling-react" component={StylingReact} />
+        <Route exact path="/todo-app" component={TodoApp} />
       </Switch>
     </Router>
   );
