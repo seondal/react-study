@@ -5,6 +5,7 @@ import {
   MdRemoveCircleOutline,
 } from "react-icons/md";
 import styled from "styled-components";
+import cn from "classnames";
 
 const Wrapper = styled.div`
   padding: 1rem;
@@ -58,12 +59,13 @@ const Wrapper = styled.div`
   }
 `;
 
-const TodoListItem = () => {
+const TodoListItem = ({ todo }) => {
+  const { text, checked } = todo;
   return (
     <Wrapper>
-      <div className="checkbox">
-        <MdCheckBoxOutlineBlank />
-        <div className="text"> 할 일 </div>
+      <div className={cn("checkbox", { checked })}>
+        {checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
+        <div className="text">{text}</div>
       </div>
       <div className="remove">
         <MdRemoveCircleOutline />
