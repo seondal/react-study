@@ -12,6 +12,9 @@ const App = () => {
       <button onClick={() => history.push("/todo-app")}>
         10장 일정 관리 웹 어플리케이션 만들기
       </button>
+      <button onClick={() => history.push("/component-optimize")}>
+        11장 컴포넌트 성능 최적화
+      </button>
     </div>
   );
 };
