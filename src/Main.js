@@ -15,6 +15,9 @@ const App = () => {
       <button onClick={() => history.push("/component-optimize")}>
         11장 컴포넌트 성능 최적화
       </button>
+      <button onClick={() => history.push("/immer-tutorial")}>
+        12장 immmer를 사용하여 더 쉽게 불변성 유지하기
+      </button>
     </div>
   );
 };

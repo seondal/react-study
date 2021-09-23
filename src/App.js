@@ -5,6 +5,7 @@ import HooksTutorial from "./hooks-tutorial/HooksTutorial.js";
 import StylingReact from "./styling-react/StylingReact.js";
 import TodoApp from "./todo-app/TodoApp.js";
 import ComponentOptimize from "./component-optimize/TodoApp.js";
+import ImmerTutorial from "./immer-tutorial/ImmerTutorial.js";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/styling-react" component={StylingReact} />
         <Route exact path="/todo-app" component={TodoApp} />
         <Route exact path="/component-optimize" component={ComponentOptimize} />
+        <Route exact path="/immer-tutorial" component={ImmerTutorial} />
       </Switch>
     </Router>
   );
