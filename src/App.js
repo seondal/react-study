@@ -7,16 +7,21 @@ import TodoApp from "./todo-app/TodoApp.js";
 import ComponentOptimize from "./component-optimize/TodoApp.js";
 import ImmerTutorial from "./immer-tutorial/ImmerTutorial.js";
 
+import RouterTutorial from "./router-tutorial/RouterTutorial.js";
+
 const App = () => {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route exact path="/hooks-tutorial" component={HooksTutorial} />
-        <Route exact path="/styling-react" component={StylingReact} />
-        <Route exact path="/todo-app" component={TodoApp} />
-        <Route exact path="/component-optimize" component={ComponentOptimize} />
-        <Route exact path="/immer-tutorial" component={ImmerTutorial} />
+        <Route path="/hooks-tutorial" component={HooksTutorial} />
+        <Route path="/styling-react" component={StylingReact} />
+        <Route path="/todo-app" component={TodoApp} />
+        <Route path="/component-optimize" component={ComponentOptimize} />
+        <Route path="/immer-tutorial" component={ImmerTutorial} />
+        <Route path="/router-tutorial" component={RouterTutorial} />
+
+        {/*  */}
       </Switch>
     </Router>
   );
