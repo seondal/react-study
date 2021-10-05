@@ -20,8 +20,6 @@ const App = () => {
         <Route path="/component-optimize" component={ComponentOptimize} />
         <Route path="/immer-tutorial" component={ImmerTutorial} />
         <Route path="/router-tutorial" component={RouterTutorial} />
-
-        {/*  */}
       </Switch>
     </Router>
   );
