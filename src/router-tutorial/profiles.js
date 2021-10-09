@@ -8,7 +8,6 @@ const Profiles = () => {
     background: "black",
     color: "white",
   };
-
   return (
     <div>
       <h3>사용자 목록</h3>
