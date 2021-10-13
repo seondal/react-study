@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Main from "./Main.js";
 import HooksTutorial from "./hooks-tutorial/HooksTutorial.js";
@@ -6,8 +6,8 @@ import StylingReact from "./styling-react/StylingReact.js";
 import TodoApp from "./todo-app/TodoApp.js";
 import ComponentOptimize from "./component-optimize/TodoApp.js";
 import ImmerTutorial from "./immer-tutorial/ImmerTutorial.js";
-
 import RouterTutorial from "./router-tutorial/RouterTutorial.js";
+import NewsViewer from "./news-viewer/NewsViewer.js";
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
         <Route path="/component-optimize" component={ComponentOptimize} />
         <Route path="/immer-tutorial" component={ImmerTutorial} />
         <Route path="/router-tutorial" component={RouterTutorial} />
+        <Route path="/news-viewer" component={NewsViewer} />
       </Switch>
     </Router>
   );

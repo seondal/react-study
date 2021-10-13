@@ -47,6 +47,9 @@ const App = () => {
       <Button onClick={() => history.push("/router-tutorial")}>
         13장 리액트 라우터로 SPA 개발하기
       </Button>
+      <Button onClick={() => history.push("/news-viewer")}>
+        14장 외부 API를 연동하여 뉴스 뷰어 만들기
+      </Button>
     </Wrapper>
   );
 };
