@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import NewsList from "./NewsList";
 
 const NewsViewer = () => {
   const [data, setData] = useState(null);
@@ -13,7 +14,7 @@ const NewsViewer = () => {
   const onClick = async () => {
     try {
       const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/todos/1"
+        "http://newsapi.org/v2/top-headlines?country=kr&apiKey=648ef3c02f084600935fa77d2aa7bb11"
       );
       setData(response.data);
     } catch (e) {
@@ -21,18 +22,19 @@ const NewsViewer = () => {
     }
   };
   return (
-    <div>
-      <div>
-        <button onClick={onClick}>불러오기</button>
-      </div>
-      {data && (
-        <textarea
-          rows={7}
-          value={JSON.stringify(data, null, 2)}
-          readOnly={true}
-        />
-      )}
-    </div>
+    // <div>
+    //   <div>
+    //     <button onClick={onClick}>불러오기</button>
+    //   </div>
+    //   {data && (
+    //     <textarea
+    //       rows={7}
+    //       value={JSON.stringify(data, null, 2)}
+    //       readOnly={true}
+    //     />
+    //   )}
+    // </div>
+    <NewsList />
   );
 };
 
