@@ -1,2 +1,2 @@
-### 📝 Study
-https://velog.io/@seondal/series/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A3%A8%EB%8A%94-%EA%B8%B0%EC%88%A0
+### Study
+https://suave-lilac-075.notion.site/3441ae6c6ab84ee3a72ddd9ca32ff486?v=e7ae8328933b4e699b849bffd5d99753
